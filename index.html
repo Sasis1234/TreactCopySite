@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treact Copy</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+    </style>
+    <script
+      src="https://kit.fontawesome.com/b427965de8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header id="home">
+      <div class="row">
+        <nav class="home__nav">
+          <div class="nav__left">
+            <a href="#" class="no_click nav__left--links">
+              <figure>
+                <img
+                  class="home__img"
+                  src="https://treact.owaiskhan.me/static/media/logo.2c489fc4.svg"
+                  alt=""
+                />
+              </figure>
+              <h3 class="name">Treact</h3>
+            </a>
+          </div>
+          <div class="nav__links">
+            <ul class="nav__list">
+              <li>
+                <a
+                  href="#about"
+                  class="hover__purple underline__purple no_click"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#blog" class="hover__purple underline__purple no_click"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#pricing"
+                  class="hover__purple underline__purple no_click"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="hover__purple underline__purple no_click"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+            <ul class="nav__list">
+              <li>
+                <a href="#" class="no_click hover__purple underline__purple"
+                  >Login</a
+                >
+              </li>
+              <li><a href="#" class="no_click sign_up">Sign Up</a></li>
+            </ul>
+          </div>
+          <button class="button_menu button_menu--open" onclick="openMenu()"><i class="fa-solid fa-bars"></i></button>
+          <div class="menu_backdrop">
+            <button class="button_menu button_menu--close" onclick="closeMenu()"><i class="fa-solid fa-circle-xmark"></i></button>
+            <ul class="menu__links">
+              <li class="menu_list"><a href="#" class="menu__link no_click" onclick="closeMenu()">About</a></li>
+              <li class="menu_list"><a href="#" class="menu__link no_click" onclick="closeMenu()">Blog</a></li>
+              <li class="menu_list"><a href="#" class="menu__link no_click" onclick="closeMenu()">Pricing</a></li>
+              <li class="menu_list"><a href="#" class="menu__link no_click" onclick="closeMenu()">Contact Us</a></li>
+              <li class="menu_list"><a href="#" class="menu__link no_click" onclick="closeMenu()">Login</a></li>
+              <li class="menu_list menu_list__main"><a href="#" class="menu__link no_click menu__link--main" onclick="closeMenu()">Sign Up</a></li>
+            </ul>
+          </div>
+        </nav>
+
+
+        <div class="row header__row">
+          <div class="container">
+            <div class="header__left">
+              <div class="header__left--top">
+                <h2>
+                  Beautiful React Templates <span class="purple">for you.</span>
+                </h2>
+                <p class="header__description">
+                  Our templates are easy to setup, understand and customize.
+                  Fully modular components with a variety of pages and
+                  components.
+                </p>
+                <div class="border">
+                  <input
+                    type="email"
+                    placeholder="Your E-Mail Address"
+                    class="no_border email"
+                  />
+                  <button style="font-size: 16px" class="no_click no_border">
+                    Get Started
+                  </button>
+                </div>
+              </div>
+              <div class="header__left--bottom">
+                <p class="partners__description">OUR TRUSTED CUSTOMERS</p>
+                <figure class="customers_img__border">
+                  <img
+                    src="https://treact.owaiskhan.me/static/media/customers-logo-strip.680ac7c2.png"
+                    class="customers_img"
+                    alt=""
+                  />
+                </figure>
+              </div>
+            </div>
+            <div class="header__right">
+              <figure>
+                <img
+                  src="https://treact.owaiskhan.me/static/media/design-illustration-2.6da6a00b.svg"
+                  class="header__img"
+                  alt=""
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <div id="features">
+            <div class="features__main">
+              <h4><span class="purple">FEATURES</span></h4>
+              <div class="features__title">
+                <h1>We have Amazing <span class="purple">Service.</span></h1>
+              </div>
+              <div class="features__desc">
+                <p class="features__desc--para">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+            <div class="services">
+              <div class="services__container">
+                <figure>
+                  <img
+                    src="https://treact.owaiskhan.me/static/media/shield-icon.daefe14b.svg"
+                    class="img__container"
+                    alt=""
+                  />
+                </figure>
+                <div class="service__desc">
+                  <h5 class="service__title">Secure</h5>
+                  <p class="color__gray spacing__2">
+                    We strictly only deal with vendors that provide top notch
+                    security.
+                  </p>
+                </div>
+              </div>
+              <div class="services__container">
+                <figure>
+                  <img
+                    src="https://treact.owaiskhan.me/static/media/support-icon.f9253ffa.svg"
+                    class="img__container"
+                    alt=""
+                  />
+                </figure>
+                <div class="service__desc">
+                  <h5 class="service__title">24/7 Support</h5>
+                  <p class="color__gray spacing__2">
+                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                    quis nostrud.
+                  </p>
+                </div>
+              </div>
+              <div class="services__container">
+                <figure>
+                  <img
+                    src="https://treact.owaiskhan.me/static/media/customize-icon.367468c9.svg"
+                    class="img__container"
+                    alt=""
+                  />
+                </figure>
+                <div class="service__desc">
+                  <h5 class="service__title">Customizable</h5>
+                  <p class="color__gray spacing__2">
+                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                    quis nostrud.
+                  </p>
+                </div>
+              </div>
+              <div class="services__container">
+                <figure>
+                  <img
+                    src="https://treact.owaiskhan.me/static/media/reliable-icon.1367510a.svg"
+                    class="img__container"
+                    alt=""
+                  />
+                </figure>
+                <div class="service__desc">
+                  <h5 class="service__title">Reliable</h5>
+                  <p class="color__gray spacing__2">
+                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                    quis nostrud.
+                  </p>
+                </div>
+              </div>
+              <div class="services__container">
+                <figure>
+                  <img
+                    src="https://treact.owaiskhan.me/static/media/fast-icon.dbb971a7.svg"
+                    class="img__container"
+                    alt=""
+                  />
+                </figure>
+                <div class="service__desc">
+                  <h5 class="service__title">Fast</h5>
+                  <p class="color__gray spacing__2">
+                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                    quis nostrud.
+                  </p>
+                </div>
+              </div>
+              <div class="services__container">
+                <figure>
+                  <img
+                    src="https://treact.owaiskhan.me/static/media/simple-icon.673b7e17.svg"
+                    class="img__container"
+                    alt=""
+                  />
+                </figure>
+                <div class="service__desc">
+                  <h5 class="service__title">Easy</h5>
+                  <p class="color__gray spacing__2">
+                    Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                    quis nostrud.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+            <div class="quality">
+              <div class="quality__text">
+                <div class="quality__title">
+                  <h4><span class="purple">QUALITY WORK</span></h4>
+                  <h1 class="quality__title--desc">
+                    Designed & Developed by
+                    <span class="purple">Professionals.</span>
+                  </h1>
+                </div>
+                <div class="quality__desc">
+                  <p class="quality__desc--para">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                  <button style="font-size: 14px" class="no_click no_border">
+                    Learn More
+                  </button>
+                </div>
+              </div>
+              <figure class="quality__fig">
+                <img
+                  src="https://treact.owaiskhan.me/static/media/hero-screenshot-1.40a097b5.png"
+                  class="quality__img"
+                  alt=""
+                />
+              </figure>
+            </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div id="steps">
+            <figure class="steps__fig">
+              <img
+                class="steps__img"
+                src="https://treact.owaiskhan.me/static/media/hero-screenshot-2.241aac1f.png"
+                alt=""
+              />
+            </figure>
+            <div class="steps">
+              <div class="steps__title">
+                <h4><span class="purple">STEPS</span></h4>
+                <h1 class="steps__tittle--desc">
+                  Easy to Get <span class="purple">Started.</span>
+                </h1>
+              </div>
+              <div class="steps__list">
+                <div class="step__list--container">
+                  <div><p class="list__numbers">01</p></div>
+                  <div class="list__text">
+                    <h3 class="steps__number--title">Register</h3>
+                    <p class="steps__number--desc">
+                      Create an account with us using Google or Facebook.
+                    </p>
+                  </div>
+                </div>
+                <div class="step__list--container">
+                  <div><p class="list__numbers">02</p></div>
+                  <div class="list__text">
+                    <h3 class="steps__number--title">Download</h3>
+                    <p class="steps__number--desc">
+                      Browse and Download the template that you like from the
+                      marketplace.
+                    </p>
+                  </div>
+                </div>
+                <div class="step__list--container">
+                  <div><p class="list__numbers">03</p></div>
+                  <div class="list__text">
+                    <h3 class="steps__number--title">Run</h3>
+                    <p class="steps__number--desc">
+                      Follow the instructions to setup and customize the
+                      template to your needs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div id="values">
+            <div class="values">
+              <div class="values__text">
+                <div class="values__title">
+                  <h4><span class="purple">VALUES</span></h4>
+                  <h1 class="values__title--desc">
+                    We Always Abide by Our
+                    <span class="purple">Principles.</span>
+                  </h1>
+                </div>
+                <div class="values__desc">
+                  <p class="values__desc--para">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                  <div class="values__container">
+                    <div class="value__service--container">
+                      <div class="value__service">
+                        <figure class="value__service--title">
+                          <i class="fa-solid fa-dollar-sign"></i>
+                        </figure>
+                        <h3 class="values__fig--title">Affordable</h3>
+                      </div>
+                      <div class="value__service--desc">
+                        <p class="value__service--para">
+                          We promise to offer you the best rate we can - at par
+                          with the industry standard.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="value__service--container">
+                      <div class="value__service">
+                        <figure class="value__service--title dollar__sign--bck">
+                          <i class="fa-solid fa-briefcase"></i>
+                        </figure>
+                        <h3 class="values__fig--title">Professionalism</h3>
+                      </div>
+                      <div class="value__service--desc">
+                        <p class="value__service--para">
+                          We assure you that our templates are designed and
+                          created by professional designers.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    style="font-size: 14px"
+                    class="no_click no_border value__button"
+                  >
+                    Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+            <figure class="values__fig">
+              <img
+                src="https://treact.owaiskhan.me/static/media/prototype-illustration.21bc4b3f.svg"
+                class="values__img"
+                alt=""
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div id="pricing">
+            <div class="pricing__main">
+              <h4><span class="purple">PRICING</span></h4>
+              <div class="pricing__title">
+                <h1>
+                  Reasonable & Flexible <span class="purple">Plans.</span>
+                </h1>
+              </div>
+              <div class="pricing__desc">
+                <p class="pricing__desc--para">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+            <div class="pricing_plans">
+              <div class="pricing_plan">
+                <div class="plan_color"></div>
+                <div class="plan__cost">
+                  <h3 class="text_color__black">PERSONAL</h3>
+                  <h1 class="price text_color__black">$17.99</h1>
+                  <h4 class="text_color__gray monthly__size">MONTHLY</h4>
+                </div>
+                <div class="plan__benefits">
+                  <h3 class="font_size__plan">For Individuals</h3>
+                  <p class="price__desc">
+                    30 Templates <br />7 Landing Pages <br />
+                    12 Internal Pages <br />Basic Assistance
+                  </p>
+                </div>
+                <div class="plan__buy">
+                  <button
+                    style="font-size: 14px"
+                    class="no_click no_border value__button buy_now"
+                  >
+                    BUY NOW
+                  </button>
+                </div>
+              </div>
+              <div class="pricing_plan pricing_plan__middle">
+                <div class="plan_color--middle"></div>
+                <div class="plan__cost">
+                  <h3 class="text_color__white">BUSINESS</h3>
+                  <h1 class="price text_color__white">$37.99</h1>
+                  <h4 class="text_color__white monthly__size">MONTHLY</h4>
+                </div>
+                <div class="plan__benefits">
+                  <h3 class="font_size__plan text_color__white">
+                    For Small Businesses
+                  </h3>
+                  <p class="price__desc text_color__white">
+                    60 Templates <br />15 Landing Pages <br />
+                    22 Internal Pages <br />Priority Assistance
+                  </p>
+                </div>
+                <div class="plan__buy">
+                  <button
+                    style="font-size: 14px"
+                    class="no_click no_border value__button buy_now buy_now--middle"
+                  >
+                    BUY NOW
+                  </button>
+                </div>
+              </div>
+              <div class="pricing_plan">
+                <div class="plan_color--end"></div>
+                <div class="plan__cost">
+                  <h3 class="text_color__black">ENTERPRISE</h3>
+                  <h1 class="price text_color__black">$57.99</h1>
+                  <h4 class="text_color__gray monthly__size">MONTHLY</h4>
+                </div>
+                <div class="plan__benefits">
+                  <h3 class="font_size__plan">For Large Companies</h3>
+                  <p class="price__desc">
+                    90 Templates <br />27 Landing Pages <br />
+                    37 Internal Pages <br />Personal Assistance
+                  </p>
+                </div>
+                <div class="plan__buy">
+                  <button
+                    style="font-size: 14px"
+                    class="no_click no_border value__button buy_now buy_now--end"
+                  >
+                    BUY NOW
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container container__border">
+        <div class="footer__container">
+          <ul class="footer_links">
+            <li class="footer_main">MAIN</li>
+            <li class="footer_link">
+              <a href="#" class="no_click footer_link">Blog</a>
+            </li>
+            <li class="footer_link">
+              <a href="#" class="no_click footer_link">FAQ's</a>
+            </li>
+            <li class="footer_link">
+              <a href="#" class="no_click footer_link">Support</a>
+            </li>
+            <li class="footer_link">
+              <a href="#" class="no_click footer_link">About Us</a>
+            </li>
+          </ul>
+          <ul class="footer_links">
+            <li class="footer_main">PRODUCT</li>
+            <li class="footer_link">
+              <a href="#" class="no_click footer_link">Log In</a>
+            </li>
+            <li class="footer_link">
+              <a href="#" class="no_click footer_link">Personal</a>
+            </li>
+            <li class="footer_link">
+              <a href="#" class="no_click footer_link">Business</a>
+            </li>
+            <li class="footer_link">
+              <a href="#" class="no_click footer_link">Team</a>
+            </li>
+          </ul>
+          <ul class="footer_links">
+            <li class="footer_main">PRESS</li>
+            <li class="footer_link">
+              <a href="#" class="no_click footer_link">Logos</a>
+            </li>
+            <li class="footer_link">
+              <a href="#" class="no_click footer_link">Events</a>
+            </li>
+            <li class="footer_link">
+              <a href="#" class="no_click footer_link">Stories</a>
+            </li>
+            <li class="footer_link">
+              <a href="#" class="no_click footer_link">Office</a>
+            </li>
+          </ul>
+          <ul class="footer_links">
+            <li class="footer_main">TEAM</li>
+            <li class="footer_link">
+              <a href="#" class="no_click footer_link">Career</a>
+            </li>
+            <li class="footer_link">
+              <a href="#" class="no_click footer_link">Founders</a>
+            </li>
+            <li class="footer_link">
+              <a href="#" class="no_click footer_link">Culture</a>
+            </li>
+            <li class="footer_link">
+              <a href="#" class="no_click footer_link">Onboarding</a>
+            </li>
+          </ul>
+          <ul class="footer_links">
+            <li class="footer_main">LEGAL</li>
+            <li class="footer_link">
+              <a href="#" class="no_click footer_link">GDPR</a>
+            </li>
+            <li class="footer_link">
+              <a href="#" class="no_click footer_link">Privacy Policy</a>
+            </li>
+            <li class="footer_link">
+              <a href="#" class="no_click footer_link">Terms of Service</a>
+            </li>
+            <li class="footer_link">
+              <a href="#" class="no_click footer_link">Disclaimer</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="container__footer--nav">
+          <div class="footer__figure--container">
+            <figure class="footer__figure">
+              <img class="footer__img" src="https://treact.owaiskhan.me/static/media/logo-light.d9a5d1b5.svg" alt="">
+            </figure>
+            <h3 class="footer__logo">Treact Inc.</h3>
+          </div>
+          <p class="footer__copyright">© 2018 Treact Inc. All Rights Reserved.</p>
+          <div class="footer__socials">
+            <a href="#" class="social_link no_click"><figure class="social__border"><i class="fa-brands fa-facebook-f"></i></figure></a>
+            <a href="#" class="social_link no_click"><figure class="social__border"><i class="fa-brands fa-twitter"></i></figure></a>
+            <a href="#" class="social_link no_click"><figure class="social__border"><i class="fa-brands fa-youtube"></i></figure></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
