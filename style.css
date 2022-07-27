@@ -99,7 +99,7 @@ button:hover {
   border: none;
 }
 
-.button_menu{ 
+.button_menu {
   background-color: transparent;
   border: none;
   font-size: 40;
@@ -118,8 +118,7 @@ button:hover {
   cursor: pointer;
 }
 
-
-.button_menu--close:hover  {
+.button_menu--close:hover {
   cursor: pointer;
   background-color: transparent;
 }
@@ -152,9 +151,7 @@ button:hover {
   text-underline-offset: 4px;
 }
 
-
 .menu__link--main:hover {
-  
 }
 
 .button_menu--close {
@@ -245,7 +242,7 @@ h2 {
   font-size: 12px;
   color: #a0aec0;
   font-weight: 700;
-  margin-bottom: 16px;
+  margin: 16px;
 }
 
 .customers_img__border {
@@ -364,7 +361,7 @@ h5 {
   border-radius: 1%;
 }
 
-.quality__title--desc{
+.quality__title--desc {
   margin: 16px 0;
   width: 75%;
 }
@@ -419,7 +416,7 @@ h5 {
   font-size: 36px;
   font-weight: 600;
   margin-right: 16px;
-  color: rgb(200, 200, 200)
+  color: rgb(200, 200, 200);
 }
 
 /* Values */
@@ -468,7 +465,7 @@ i {
   align-items: center;
 }
 
-.value__service--title {  
+.value__service--title {
   border-radius: 50%;
   background-color: #9ae6b4;
   margin-right: 8px;
@@ -488,7 +485,7 @@ i {
   justify-content: space-between;
 }
 
-.dollar__sign--bck{
+.dollar__sign--bck {
   background-color: #feb2b2;
 }
 
@@ -547,13 +544,13 @@ i {
 
 .buy_now {
   margin: 0;
-  background-color: #4FD1C5;
+  background-color: #4fd1c5;
   padding: 16px 25%;
 }
 
 .plan_color {
   padding: 0 0 8px 0;
-  background-color: #4FD1C5;
+  background-color: #4fd1c5;
 }
 
 .text_color__black {
@@ -583,29 +580,29 @@ i {
 
 .plan_color--middle {
   padding: 0 0 8px 0;
-  background-color: #667EEA;
+  background-color: #667eea;
 }
 
 .pricing_plan__middle {
-  background-color: #667EEA;
+  background-color: #667eea;
 }
 
 .buy_now--middle {
   background-color: white;
-  color: #667EEA;
+  color: #667eea;
 }
 
-.plan_color--end{
+.plan_color--end {
   padding: 0 0 8px 0;
-  background-color: #F56565;
+  background-color: #f56565;
 }
 
 .buy_now--end {
-  background-color: #F56565;
+  background-color: #f56565;
 }
 
 .buy_now:hover {
-  background-color: #4FD1C5;
+  background-color: #4fd1c5;
   position: relative;
   bottom: 1px;
   left: 1px;
@@ -616,7 +613,7 @@ i {
 }
 
 .buy_now--end:hover {
-  background-color: #F56565;
+  background-color: #f56565;
 }
 
 /* Footer */
@@ -648,7 +645,7 @@ footer {
   padding-bottom: 16px;
 }
 
-.footer__container{
+.footer__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -666,7 +663,6 @@ footer {
 .footer__img {
   width: 100%;
 }
-
 
 .container__footer--nav {
   width: 100%;
@@ -721,8 +717,7 @@ footer {
   .nav__links {
     display: none;
   }
-  
-  
+
   .header__left,
   .header__right,
   .quality__text,
@@ -748,7 +743,7 @@ footer {
 
   .header__left--bottom,
   .quality,
-  #steps, 
+  #steps,
   .step__list--container,
   .values__container,
   #pricing,
@@ -760,7 +755,6 @@ footer {
   .pricing_plan {
     margin-bottom: 32px;
   }
-  
 
   .row,
   #values,
@@ -774,8 +768,14 @@ footer {
   .steps__number--desc,
   .value__service,
   #pricing,
-  .container__footer--nav {
+  .container__footer--nav,
+  .quality__desc--para,
+  .value__service {
     margin: 0 auto;
+  }
+
+  .quality__title--desc {
+    font-size: 35px;
   }
 
   .container {
@@ -789,7 +789,7 @@ footer {
   .container__footer--nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center
+    justify-content: center;
   }
 
   .footer__copyright,
